@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1378ca;
+    color: #fff;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Faz o header ficar fixo */
+    top: 0; /* Fixa no topo */
+    left: 0;
+    width: 100%; /* Para garantir que ocupe toda a largura da página */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding-top: 130px; /* Espaço para evitar que o conteúdo fique atrás do header */
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribui logo e nome da loja */
+    align-items: center;
+    padding: 0 20px; /* Espaço interno */
+}
+
+.logo {
+    width: 100px; /* Tamanho da logo */
+    height: auto;
+}
+
+.store-name h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.store-name p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.item p {
+    color: #ff5722;
+    font-size: 1.2rem;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #1378ca;
+    color: #fff;
+}
